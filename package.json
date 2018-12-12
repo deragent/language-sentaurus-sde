@@ -1,0 +1,17 @@
+{
+  "name": "language-sentaurus-sde",
+  "version": "0.0.0",
+  "description": "Synopsys Sentaurus SDE language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "license": "MIT"
+}

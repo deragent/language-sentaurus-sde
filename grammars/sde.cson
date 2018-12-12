@@ -1,0 +1,43 @@
+'scopeName': 'source.sde'
+'name': 'Sentaurus SDE'
+'fileTypes': ['cmd']
+
+'patterns': [
+  {
+    'begin': '#'
+    'end': '\\n'
+    'name': 'comment.line.hash-tag.sde'
+  },
+  {
+    'begin': '\"'
+    'end': '\"'
+    'name': 'string.quoted.double.sde'
+  },
+  {
+    'match': '\\b((0(x|X)[0-9a-fA-F]([0-9a-fA-F\']*[0-9a-fA-F])?)|(0(b|B)[01]([01\']*[01])?)|(([0-9]([0-9\']*[0-9])?\\.?[0-9]*([0-9\']*[0-9])?)|(\\.[0-9]([0-9\']*[0-9])?))((e|E)(\\+|-)?[0-9]([0-9\']*[0-9])?)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b'
+    'name': 'constant.numeric.sde'
+  },
+  {
+    'match': '\\(\\s*(define)\\s+([a-zA-Z][a-zA-Z0-9_-]*)\\s+.*\\)'
+    'captures':
+      '1':
+        'name': 'keyword.control.sde'
+      '2':
+        'name': 'entity.name.constant.sde'
+    'name': 'meta.define.sde'
+  },
+  {
+    'match': '\\(\\s*(\\*|/|-|\\+)\\s+'
+    'captures':
+      '1':
+        'name': 'keyword.control.sde'
+    'name': 'meta.operator.sde'
+  },
+  {
+    'match': '\\(\\s*([a-zA-Z][a-zA-Z0-9_:-]*)\\s+'
+    'captures':
+      '1':
+        'name': 'entity.name.function.sde'
+    'name': 'meta.expression.sde'
+  }
+]
