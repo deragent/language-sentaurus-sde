@@ -4,6 +4,9 @@
 
 'patterns': [
   {
+    'match': '@([a-zA-Z][a-zA-Z0-9_-]*)@'
+    'name': 'constant.language.sde'
+  },{
     'begin': '#'
     'end': '\\n'
     'name': 'comment.line.hash-tag.sde'
