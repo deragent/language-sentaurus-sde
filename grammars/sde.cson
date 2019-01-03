@@ -10,10 +10,11 @@
   {
     'begin': ';'
     'end': '\\n'
-    'name': 'comment.line.semicolon.sde'
+    'name': 'comment.line.semicolon
+    .sde'
   },
   {
-    'begin': '#'
+    'begin': '^\\s*#'
     'end': '\\n'
     'name': 'comment.line.hash-tag.sde'
   },
